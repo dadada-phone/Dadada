@@ -3,9 +3,9 @@ runtime: nodejs14
 build:
   commands:
     pre-build:
-      - npm install --production
+      - npm install
     build:
-      - npm build:ci
+      - npx nx run dadada-server:build
 
 run:
   command: node dist/apps/dadada-server/main.js
