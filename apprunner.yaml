@@ -8,7 +8,7 @@ build:
       - npm build:ci
 
 run:
-  command: node dist/apps/dadada-server.js
+  command: node dist/apps/dadada-server/main.js
   network:
   port: 8000
   env: APP_PORT
